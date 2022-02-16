@@ -1,11 +1,19 @@
 function filter(objects, searchWhere, searchWhat){
   let result = []
+  let nalichie = false
   for (let i of objects){
     if (i[searchWhere]===searchWhat){
+      nalichie = true
       result.push(i)
     }
   }
-  console.log(result)
+  if (nalichie == false){
+    console.log("Такого свойства или значения нет в массиве!")
+  }
+  else{
+    console.log(result)
+  }
+  
 }
 
 let searchWhere = 'name'
@@ -16,7 +24,7 @@ let objects = [
   {name: 'Алексей', surname: 'Громов'},
   {name: 'Тимофей', surname: 'Рябов'},
   {name: 'Андрей', surname: 'Кузнецов'},
-  {name: 'Евгений', surname: 'Зайцев'}
+  {name: 'Евгений', surname: 'Рябов'}
 ]
 
 filter(objects, searchWhere, searchWhat)
