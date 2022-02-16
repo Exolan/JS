@@ -1,4 +1,4 @@
-function filter(object, searchWhere, searchWhat){
+function filter(objects, searchWhere, searchWhat){
   let result = []
   for (let i of objects){
     if (i[searchWhere]===searchWhat){
