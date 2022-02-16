@@ -3,8 +3,7 @@ let arraychs=["afasfdgg@mail.ru"]
 function filter(array, arraychs){
   let arrayclear=[]
   for (let i = 0; i<array.length;i++){
-    let znach = false
-    znach = arraychs.includes(array[i])
+    let znach = arraychs.includes(array[i])
     if(znach==false){
       arrayclear.push(array[i])
     }
@@ -12,4 +11,3 @@ function filter(array, arraychs){
   console.log(arrayclear)
 }
 filter(array, arraychs)
-  
