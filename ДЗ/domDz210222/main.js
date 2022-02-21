@@ -8,28 +8,6 @@ let massive = [
 let select = document.createElement('select')
 let needValue = 'Тимофей'
 
-// function initOption(massive, value = massive[0].value){
-//   let option = []
-
-//   for (let i of massive){
-//     if (option[i].value == value){
-//     option[i] = document.createElement('option');
-//     option[i].value = value
-//     option[i].textContent = massive[i].label
-//     break
-//   }
-  
-//   for (let i in massive){
-//     option[i] = document.createElement('option');
-//     option[i].value = massive[i].value
-//     option[i].textContent = massive[i].label
-//     if (option[i].value != value){
-//       select.prepend(option[i])
-//     } 
-//   return select
-//   }
-// }
-// }
 function initOption(massive, value = massive[0].value) {
     let option = []
     for (i of massive) {
